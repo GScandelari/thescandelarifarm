@@ -39,11 +39,11 @@
             color: #333;
         }
 
-        img {
+        video {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 10px auto; /* Centraliza a imagem horizontalmente */
+            margin: 10px auto; /* Centraliza o vídeo horizontalmente */
         }
 
         p {
@@ -74,7 +74,10 @@
     <main>
         <div class="column">
             <h2>Oops!</h2>
-            <img src="images/404.png" alt="Erro 404">
+            <video controls>
+                <source src="videos/404.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
             <p>A página que você está procurando não foi encontrada.</p>
             <button onclick="window.location.href='index.html'">Voltar para a Home</button>
         </div>
